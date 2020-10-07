@@ -6,4 +6,4 @@ const connectionPool = mysql.createPool({
   database: 'nod_with_max',
 });
 
-module.exports = poll.promise();
+module.exports = connectionPool.promise();
