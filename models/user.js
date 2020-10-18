@@ -7,16 +7,16 @@ const User = sequelize.define('user', {
     type: Sequelize.INTEGER,
     allowNull: false,
     primaryKey: true,
-    autoIncrement: true,
+    autoIncrement: true
   },
   name: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: false
   },
   email: {
     type: Sequelize.STRING,
-    allowNull: false,
-  },
+    allowNull: false
+  }
 });
 
 module.exports = User;

@@ -2,7 +2,7 @@ const Sequleize = require('sequelize');
 
 const sequelize = new Sequleize('node_with_max', 'dev', 'dev', {
   dialect: 'mysql',
-  hose: 'localhost',
+  hose: 'localhost'
 });
 
 module.exports = sequelize;
