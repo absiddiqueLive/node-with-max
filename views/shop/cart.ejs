@@ -6,10 +6,10 @@
     <main>
         <% if(products.length > 0) {%>
         <ul>
-            <% products.map(item => { %>
-            <li><%= item.product.title %> (<%= item.quantity %>)</li>
+            <% products.map(product => { %>
+            <li><%= product.title %> (<%= product.cartItem.quantity %>)</li>
             <form action="/cart-remove-item" method="POST">
-                <input type="hidden" name="productId" value="<%= item.product.id %>">
+                <input type="hidden" name="productId" value="<%= product.id %>">
                 <button type="submit" class="btn btn-sm">Remove</button>
             </form>
             <% }) %>
